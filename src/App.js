@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
 
-function App() {
+import { courses } from "./data.json";
+
+// components
+// import Topbar from "./components/Topbar/Topbar";
+import Layout from "./hoc/Layout/Layout";
+import CoursesPage from "./components/pages/CoursesPage/CoursesPage";
+import SingleCoursePage from "./components/pages/SingleCoursePage/SingleCoursePage";
+import QuizPage from "./components/pages/QuizPage/QuizPage";
+import CongratulationsPage from "./components/pages/CongratulationsPage/CongratulationsPage";
+
+import "./App.css";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      {/* <Topbar /> */}
+      <Layout>
+        <BrowserRouter>
+          <Route path="/courses" exact component={CoursesPage} />
+          <Route path="/courses/:id/pages" exact component={SingleCoursePage} />
+          <Route path="/courses/:id/quiz" exact component={QuizPage} />
+          <Route
+            path="/courses/:id/end"
+            exact
+            component={CongratulationsPage}
+          />
+        </BrowserRouter>
+      </Layout>
     </div>
   );
-}
+};
 
 export default App;
