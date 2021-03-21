@@ -18,12 +18,18 @@ const CourseCard = ({ id, title, subtitle, image }) => {
       <Card className="my-3">
         <CardImg top width="100%" src={`${image}`} alt="Card image cap" />
         <CardBody>
-          <CardTitle tag="h5">{title}</CardTitle>
+          <CardTitle style={{ fontWeight: "700" }} tag="h5">
+            {title}
+          </CardTitle>
           <CardText>{subtitle}</CardText>
         </CardBody>
         <Link to={`/courses/${id}/pages`}>
-          <Button className="m-3" color="primary">
-            Go to the course
+          <Button
+            style={{ background: "#e28336", border: "none" }}
+            className="m-3 float-right"
+            color="primary"
+          >
+            Discover
           </Button>
         </Link>
       </Card>

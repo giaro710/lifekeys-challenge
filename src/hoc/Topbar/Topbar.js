@@ -14,17 +14,17 @@ const Topbar = () => {
   const toggleNavbar = () => setCollapsed(!collapsed);
 
   return (
-    <div className="mt-3">
-      <Navbar color="faded" light>
+    <div className="mt-3 border-bottom">
+      <Navbar className="pl-0 pr-0" color="faded" light>
         <NavbarBrand
-          style={{ fontWeight: "800" }}
+          style={{ fontWeight: "800", fontSize: "25px" }}
           className="logo"
           href="/courses"
           className="mr-auto"
         >
           Courses<span style={{ color: "#e28336" }}>.</span>
         </NavbarBrand>
-        <NavbarToggler onClick={toggleNavbar} className="mr-2" />
+        <NavbarToggler onClick={toggleNavbar} />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
             <NavItem>

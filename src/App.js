@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import { Container } from "reactstrap";
 
 import { data } from "./data";
@@ -20,26 +20,29 @@ const App = () => {
       </Container>
       <Container className="mt-5">
         <BrowserRouter>
-          <Route
-            path="/courses"
-            exact
-            component={() => <CoursesPage courses={data.courses} />}
-          />
-          <Route
-            path="/courses/:id/pages"
-            exact
-            component={() => <SingleCoursePage courses={data.courses} />}
-          />
-          <Route
-            path="/courses/:id/quiz"
-            exact
-            component={() => <QuizPage courses={data.courses} />}
-          />
-          <Route
-            path="/courses/:id/end"
-            exact
-            component={() => <CongratulationsPage courses={data.courses} />}
-          />
+          <Switch>
+            <Route
+              path="/courses"
+              exact
+              component={() => <CoursesPage courses={data.courses} />}
+            />
+            <Route
+              path="/courses/:id/pages"
+              exact
+              component={() => <SingleCoursePage courses={data.courses} />}
+            />
+            <Route
+              path="/courses/:id/quiz"
+              exact
+              component={() => <QuizPage courses={data.courses} />}
+            />
+            <Route
+              path="/courses/:id/end"
+              exact
+              component={() => <CongratulationsPage courses={data.courses} />}
+            />
+            <Route render={() => <Redirect to={{ pathname: "/courses" }} />} />
+          </Switch>
         </BrowserRouter>
       </Container>
     </div>
