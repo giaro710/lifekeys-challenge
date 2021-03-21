@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import SingleAnswer from "./SingleAnswer/SingleAnswer";
 
 const AllAnswers = (props) => {
@@ -20,10 +20,6 @@ const AllAnswers = (props) => {
 
   return (
     <div>
-      <h5>
-        Select the correct answer{" "}
-        {props.multipleChoice ? "Attention: more than one is correct" : null}
-      </h5>
       <div onChange={props.onChange}>{renderChoices()}</div>
     </div>
   );

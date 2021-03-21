@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import { Container } from "reactstrap";
 
-import { courses } from "./data.json";
+import { data } from "./data";
 
 // components
 import Topbar from "./components/Topbar/Topbar";
@@ -22,9 +22,21 @@ const App = () => {
       </Container>
       <Layout>
         <BrowserRouter>
-          <Route path="/courses" exact component={CoursesPage} />
-          <Route path="/courses/:id/pages" exact component={SingleCoursePage} />
-          <Route path="/courses/:id/quiz" exact component={QuizPage} />
+          <Route
+            path="/courses"
+            exact
+            component={() => <CoursesPage courses={data.courses} />}
+          />
+          <Route
+            path="/courses/:id/pages"
+            exact
+            component={() => <SingleCoursePage courses={data.courses} />}
+          />
+          <Route
+            path="/courses/:id/quiz"
+            exact
+            component={() => <QuizPage courses={data.courses} />}
+          />
           <Route
             path="/courses/:id/end"
             exact

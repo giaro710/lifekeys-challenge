@@ -14,10 +14,10 @@ const Topbar = () => {
   const toggleNavbar = () => setCollapsed(!collapsed);
 
   return (
-    <div>
+    <div className="mt-3">
       <Navbar color="faded" light>
-        <NavbarBrand href="/" className="mr-auto">
-          reactstrap
+        <NavbarBrand href="/courses" className="mr-auto">
+          Courses
         </NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>

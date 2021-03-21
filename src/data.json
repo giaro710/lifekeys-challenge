@@ -1,8 +1,10 @@
 {
   "courses": [
     {
-      "id": "1",
-      "title": "Cucina Italiana",
+      "id": 1,
+      "title": "Indian Quisine",
+      "subtitle": "Discover spicy flavours and bright colors to bring your kitchen to life",
+      "img": "/assets/images/cooking-min2.jpg",
       "content": [
         { "text": "la cucina italiana piace" },
         { "text": " no ketchup sugli spaghetti" },
@@ -10,7 +12,196 @@
       ],
       "questions": [
         {
-          "questionText": "piace la cucina italiana?",
+          "questionText": "Indian cuisine has not many flavours?",
+          "type": "boolean",
+          "answers": [
+            {
+              "answerText": "true",
+              "isCorrect": false
+            },
+            {
+              "answerText": "false",
+              "isCorrect": true
+            }
+          ]
+        },
+        {
+          "questionText": "Select the food that is not typical in indian cuisine:",
+          "type": "singleChoice",
+          "answers": [
+            {
+              "answerText": "Rice",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Mustard",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Mozzarella",
+              "isCorrect": true
+            }
+          ]
+        },
+        {
+          "questionText": "Select all the ingredients to cook an Aloo gobi?",
+          "type": "multipleChoice",
+          "answers": [
+            {
+              "answerText": "Cauliflower",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Garlic",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Tomato",
+              "isCorrect": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Photography",
+      "subtitle": "Master the art of light, be ready to steal a piece af the world with your camera",
+      "img": "/assets/images/photography-min.jpg",
+      "content": [
+        { "text": "la cucina italiana piace" },
+        { "text": " no ketchup sugli spaghetti" },
+        { "text": "sigaretta dopo colazione" }
+      ],
+      "questions": [
+        {
+          "questionText": "Wider aperture means image less brigther",
+          "type": "boolean",
+          "answers": [
+            {
+              "answerText": "true",
+              "isCorrect": false
+            },
+            {
+              "answerText": "false",
+              "isCorrect": true
+            }
+          ]
+        },
+        {
+          "questionText": "Shutter speed is calculated in",
+          "type": "singleChoice",
+          "answers": [
+            {
+              "answerText": "Centimeters",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Seconds",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Hertz",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "Key concepts of photography",
+          "type": "multipleChoice",
+          "answers": [
+            {
+              "answerText": "Exposure",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Aperture",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Number of pages",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Music Theory",
+      "subtitle": "Music is painting with sounds. Learn the basics of the fourth art",
+      "img": "/assets/images/music-min.jpg",
+      "content": [
+        { "text": "la cucina italiana piace" },
+        { "text": " no ketchup sugli spaghetti" },
+        { "text": "sigaretta dopo colazione" }
+      ],
+      "questions": [
+        {
+          "questionText": "Practice is not important in music",
+          "type": "boolean",
+          "answers": [
+            {
+              "answerText": "true",
+              "isCorrect": false
+            },
+            {
+              "answerText": "false",
+              "isCorrect": true
+            }
+          ]
+        },
+        {
+          "questionText": "Which of the seven notes is missing? C D F G A B",
+          "type": "singleChoice",
+          "answers": [
+            {
+              "answerText": "H",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Z",
+              "isCorrect": false
+            },
+            {
+              "answerText": "E",
+              "isCorrect": true
+            }
+          ]
+        },
+        {
+          "questionText": "Indicate the to symbols to sharp/flat notes",
+          "type": "multipleChoice",
+          "answers": [
+            {
+              "answerText": "#",
+              "isCorrect": true
+            },
+            {
+              "answerText": "♭",
+              "isCorrect": false
+            },
+            {
+              "answerText": "€",
+              "isCorrect": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Radio speaking",
+      "subtitle": "Are you wondering how to talk, interview and chose the right music? Here's your answers",
+      "img": "/assets/images/radio-speaking-min.jpg",
+      "content": [
+        { "text": "la cucina italiana piace" },
+        { "text": " no ketchup sugli spaghetti" },
+        { "text": "sigaretta dopo colazione" }
+      ],
+      "questions": [
+        {
+          "questionText": "When you have a guest make him/her feel home",
           "type": "boolean",
           "answers": [
             {
@@ -24,37 +215,163 @@
           ]
         },
         {
-          "questionText": "ketchup sugli spaghetti?",
+          "questionText": "The right attitude towards new music is",
           "type": "singleChoice",
           "answers": [
             {
-              "answerText": "Sempre, fa bene",
+              "answerText": "No interested. I listen only to Oasis",
               "isCorrect": false
             },
             {
-              "answerText": "Ogni tanto mi piace",
+              "answerText": "Prejudice",
               "isCorrect": false
             },
             {
-              "answerText": "Mai e poi mai",
+              "answerText": "Curiosity",
               "isCorrect": true
             }
           ]
         },
         {
-          "questionText": "sigaretta dopo colazione?",
+          "questionText": "For better speaking is good to:",
           "type": "multipleChoice",
           "answers": [
             {
-              "answerText": "Qualche volta aiuta",
+              "answerText": "Warm the voice",
               "isCorrect": true
             },
             {
-              "answerText": "Smetti di fumare",
+              "answerText": "No smoking",
               "isCorrect": false
             },
             {
-              "answerText": "D'obbligo",
+              "answerText": "Singing in the shower",
+              "isCorrect": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Social Marketing",
+      "subtitle": "Your brand needs visibiliy. Here all the secret to gain social success",
+      "img": "/assets/images/social-marketing-min.jpg",
+      "content": [
+        { "text": "la cucina italiana piace" },
+        { "text": " no ketchup sugli spaghetti" },
+        { "text": "sigaretta dopo colazione" }
+      ],
+      "questions": [
+        {
+          "questionText": "Quantity means bad quality",
+          "type": "boolean",
+          "answers": [
+            {
+              "answerText": "true",
+              "isCorrect": false
+            },
+            {
+              "answerText": "false",
+              "isCorrect": true
+            }
+          ]
+        },
+        {
+          "questionText": "Select the key word",
+          "type": "singleChoice",
+          "answers": [
+            {
+              "answerText": "Visibility",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Organisation",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Brand",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "Which is the best social for your adv?",
+          "type": "multipleChoice",
+          "answers": [
+            {
+              "answerText": "MySpace",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Facebook",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Instagram",
+              "isCorrect": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Mindfullness",
+      "subtitle": "Breathe. Learn more about yourself and discover your soul through meditation",
+      "img": "/assets/images/yoga-min.jpg",
+      "content": [
+        { "text": "la cucina italiana piace" },
+        { "text": " no ketchup sugli spaghetti" },
+        { "text": "sigaretta dopo colazione" }
+      ],
+      "questions": [
+        {
+          "questionText": "When you have a guest make him/her feel home",
+          "type": "boolean",
+          "answers": [
+            {
+              "answerText": "true",
+              "isCorrect": true
+            },
+            {
+              "answerText": "false",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "The right attitude towards new music is",
+          "type": "singleChoice",
+          "answers": [
+            {
+              "answerText": "No interested. I listen only to Oasis",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Prejudice",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Curiosity",
+              "isCorrect": true
+            }
+          ]
+        },
+        {
+          "questionText": "For better speaking is good to:",
+          "type": "multipleChoice",
+          "answers": [
+            {
+              "answerText": "Warm the voice",
+              "isCorrect": true
+            },
+            {
+              "answerText": "No smoking",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Singing in the shower",
               "isCorrect": true
             }
           ]
