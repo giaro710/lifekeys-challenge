@@ -1,10 +1,11 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
+import { Container } from "reactstrap";
 
 import { courses } from "./data.json";
 
 // components
-// import Topbar from "./components/Topbar/Topbar";
+import Topbar from "./components/Topbar/Topbar";
 import Layout from "./hoc/Layout/Layout";
 import CoursesPage from "./components/pages/CoursesPage/CoursesPage";
 import SingleCoursePage from "./components/pages/SingleCoursePage/SingleCoursePage";
@@ -16,7 +17,9 @@ import "./App.css";
 const App = () => {
   return (
     <div className="app">
-      {/* <Topbar /> */}
+      <Container>
+        <Topbar />
+      </Container>
       <Layout>
         <BrowserRouter>
           <Route path="/courses" exact component={CoursesPage} />
