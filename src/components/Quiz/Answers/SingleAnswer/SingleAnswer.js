@@ -3,7 +3,7 @@ import { Input } from "reactstrap";
 
 import "./SingleAnswer.css";
 
-const RadioAnswer = ({ type, name, value, text, isCorrect, clicked }) => {
+const SingleAnswer = ({ type, name, value, text, isCorrect, clicked }) => {
   const displayResultColor = () => {
     let resultClass = "";
     if (clicked && isCorrect) {
@@ -28,4 +28,4 @@ const RadioAnswer = ({ type, name, value, text, isCorrect, clicked }) => {
   );
 };
 
-export default RadioAnswer;
+export default SingleAnswer;

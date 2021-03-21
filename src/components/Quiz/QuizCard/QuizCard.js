@@ -4,7 +4,6 @@ import { Button } from "reactstrap";
 import AllAnswers from "../Answers/AllAnswers";
 
 const QuizCard = (props) => {
-  console.log(props);
   const [answerValue, setAnswerValue] = useState("");
 
   const renderAnswers = () => {

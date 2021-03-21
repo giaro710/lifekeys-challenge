@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import SingleAnswer from "./SingleAnswer/SingleAnswer";
 
 const AllAnswers = (props) => {
@@ -6,9 +6,9 @@ const AllAnswers = (props) => {
     return props.answers.map((answer, index) => {
       return (
         <SingleAnswer
-          key={index}
+          key={answer.answerText}
           type={props.multipleChoice ? "checkbox" : "radio"}
-          name={props.multipleChoice ? `checkbox-btn-${index}` : "radio-btn"}
+          name={props.multipleChoice ? `checkbox-btn-${index}` : `radio-btn`}
           value={answer.answerText}
           text={answer.answerText}
           isCorrect={answer.isCorrect}
