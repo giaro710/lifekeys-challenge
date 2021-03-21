@@ -4,9 +4,7 @@ import { Container } from "reactstrap";
 
 import { data } from "./data";
 
-// components
-import Topbar from "./components/Topbar/Topbar";
-import Layout from "./hoc/Layout/Layout";
+import Topbar from "./hoc/Topbar/Topbar";
 import CoursesPage from "./components/pages/CoursesPage/CoursesPage";
 import SingleCoursePage from "./components/pages/SingleCoursePage/SingleCoursePage";
 import QuizPage from "./components/pages/QuizPage/QuizPage";
@@ -20,7 +18,7 @@ const App = () => {
       <Container>
         <Topbar />
       </Container>
-      <Layout>
+      <Container className="mt-5">
         <BrowserRouter>
           <Route
             path="/courses"
@@ -43,7 +41,7 @@ const App = () => {
             component={() => <CongratulationsPage courses={data.courses} />}
           />
         </BrowserRouter>
-      </Layout>
+      </Container>
     </div>
   );
 };

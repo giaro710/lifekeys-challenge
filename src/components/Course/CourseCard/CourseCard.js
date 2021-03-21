@@ -14,7 +14,7 @@ import {
 const CourseCard = ({ id, title, subtitle, image }) => {
   console.log("imageurl", `${image}`);
   return (
-    <div>
+    <div style={{ width: "45%" }}>
       <Card className="my-3">
         <CardImg top width="100%" src={`${image}`} alt="Card image cap" />
         <CardBody>

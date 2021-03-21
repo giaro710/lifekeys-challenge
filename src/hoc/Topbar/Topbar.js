@@ -16,8 +16,13 @@ const Topbar = () => {
   return (
     <div className="mt-3">
       <Navbar color="faded" light>
-        <NavbarBrand href="/courses" className="mr-auto">
-          Courses
+        <NavbarBrand
+          style={{ fontWeight: "800" }}
+          className="logo"
+          href="/courses"
+          className="mr-auto"
+        >
+          Courses<span style={{ color: "#e28336" }}>.</span>
         </NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>

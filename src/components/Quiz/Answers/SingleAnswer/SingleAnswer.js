@@ -25,15 +25,14 @@ const SingleAnswer = ({
   };
 
   return (
-    <Container className={`border rounded my-5 ${displayResultColor()}`}>
+    <Container className={`p-2 border rounded my-5 ${displayResultColor()}`}>
       <Input
         className="ml-4"
         type={type}
         name={name}
         disabled={clickedSubmit ? true : false}
       />
-      <p className="ml-5">{text}</p>
-      {/* <p className={`${displayResultColor()} ml-5`}>{text}</p> */}
+      <p className="my-0 ml-5">{text}</p>
     </Container>
   );
 };

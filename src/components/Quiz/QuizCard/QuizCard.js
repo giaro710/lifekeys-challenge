@@ -33,27 +33,17 @@ const QuizCard = (props) => {
   };
 
   return (
-    <Container className="border rounded p-4 mt-5">
+    <Container className="border rounded p-4 pl-0 mt-5">
       <h5 className="mb-2">{props.question.questionText}</h5>
-      <Container onChange={handleAnswerChange}>
-        {renderChoices()}
-        {/* <Label check>
-          <Input type="radio" name="radio1" /> Option one is this and that—be
-          sure to include why it's great
-        </Label>{" "}
-        <Label check>
-          <Input type="radio" name="radio1" /> Option one is this and that—be
-          sure to include why it's great
-        </Label> */}
-      </Container>
+      <Container onChange={handleAnswerChange}>{renderChoices()}</Container>
       <Button
-        className="mt-5"
+        className="mt-5 mr-5 ml-1"
         size="lg"
         block
         onClick={props.handleSubmitQuestion}
         color="primary"
       >
-        That's my final answer
+        ANSWER
       </Button>
     </Container>
   );

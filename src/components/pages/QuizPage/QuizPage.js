@@ -99,7 +99,11 @@ const QuizPage = ({ courses }) => {
       </Button>
     ) : (
       <Link to="/courses/2/end">
-        <Button className="my-5 float-right" color="primary">
+        <Button
+          style={{ background: "#e28336", border: "none" }}
+          className="my-5 float-right"
+          disabled={!clickedSubmit}
+        >
           END
         </Button>
       </Link>
