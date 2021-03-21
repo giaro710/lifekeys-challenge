@@ -1,30 +1,40 @@
 import React from "react";
-import { Input } from "reactstrap";
+import { Container, Input } from "reactstrap";
 
 import "./SingleAnswer.css";
 
-const SingleAnswer = ({ type, name, value, text, isCorrect, clicked }) => {
+const SingleAnswer = ({
+  type,
+  name,
+  answerValue,
+  text,
+  isCorrect,
+  clickedSubmit,
+}) => {
   const displayResultColor = () => {
     let resultClass = "";
-    if (clicked && isCorrect) {
-      return (resultClass = "green");
-    } else if (clicked && !isCorrect) {
-      return (resultClass = "red");
-    } else {
-      return (resultClass = "");
+    if (answerValue === "on") {
+      if (clickedSubmit && isCorrect) {
+        return (resultClass = "green");
+      } else if (clickedSubmit && !isCorrect) {
+        return (resultClass = "red");
+      } else {
+        return (resultClass = "");
+      }
     }
   };
 
   return (
-    <>
+    <Container className={`border rounded my-5 ${displayResultColor()}`}>
       <Input
+        className="ml-4"
         type={type}
         name={name}
-        value={value}
-        disabled={clicked ? true : false}
+        disabled={clickedSubmit ? true : false}
       />
-      <p className={`${displayResultColor()}`}>{text}</p>
-    </>
+      <p className="ml-5">{text}</p>
+      {/* <p className={`${displayResultColor()} ml-5`}>{text}</p> */}
+    </Container>
   );
 };
 

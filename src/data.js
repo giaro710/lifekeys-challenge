@@ -2,7 +2,7 @@ export const data = {
   courses: [
     {
       id: 1,
-      title: "Indian Quisine",
+      title: "Indian Cuisine",
       subtitle:
         "Discover spicy flavours and bright colors to bring your kitchen to life",
       img: "/assets/images/cooking-min2.jpg",

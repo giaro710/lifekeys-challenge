@@ -1,58 +1,58 @@
 import React, { useState } from "react";
-import { Container, Button } from "reactstrap";
+import { Container, Button, Label, Input } from "reactstrap";
 
 import SingleAnswer from "../Answers/SingleAnswer/SingleAnswer";
 
 import AllAnswers from "../Answers/AllAnswers";
 
 const QuizCard = (props) => {
-  const [answerValue, setAnswerValue] = useState("");
-
-  // const renderAnswers = () => {
-  //   return (
-  //     <AllAnswers
-  //       answers={props.question.answers}
-  //       onChange={handleRadioChange}
-  //       clicked={props.clickedSubmit}
-  //       multipleChoice={props.question.type === "multipleChoice"}
-  //     />
-  //   );
-  // };
-
   const renderChoices = () => {
     return props.question.answers.map((answer, index) => {
       return (
-        <Container className="mt-3 border rounded">
-          <SingleAnswer
-            key={answer.answerText}
-            type={
-              props.question.type === "multipleChoice" ? "checkbox" : "radio"
-            }
-            name={
-              props.question.type === "multipleChoice"
-                ? `checkbox-btn-${index}`
-                : `radio-btn`
-            }
-            value={answer.answerText}
-            text={answer.answerText}
-            isCorrect={answer.isCorrect}
-            clicked={props.clickedSubmit}
-          />
-        </Container>
+        <SingleAnswer
+          key={answer.answerText}
+          type={props.question.type === "multipleChoice" ? "checkbox" : "radio"}
+          name={
+            props.question.type === "multipleChoice"
+              ? `checkbox-btn-${index}`
+              : `radio-btn`
+          }
+          answerValue={props.answerValue}
+          text={answer.answerText}
+          isCorrect={answer.isCorrect}
+          clickedSubmit={props.clickedSubmit}
+          onAnswerChange={handleAnswerChange}
+        />
       );
     });
   };
 
   const handleAnswerChange = (e) => {
-    setAnswerValue(e.target.value);
+    console.log("value", e.target.value);
+    props.setAnswerValue(e.target.value);
   };
 
   return (
     <Container className="border rounded p-4 mt-5">
       <h5 className="mb-2">{props.question.questionText}</h5>
-      {/* {renderAnswers()} */}
-      <Container onChange={handleAnswerChange}>{renderChoices()}</Container>
-      <Button className="mt-5" onClick={props.handleSubmit} color="primary">
+      <Container onChange={handleAnswerChange}>
+        {renderChoices()}
+        {/* <Label check>
+          <Input type="radio" name="radio1" /> Option one is this and that—be
+          sure to include why it's great
+        </Label>{" "}
+        <Label check>
+          <Input type="radio" name="radio1" /> Option one is this and that—be
+          sure to include why it's great
+        </Label> */}
+      </Container>
+      <Button
+        className="mt-5"
+        size="lg"
+        block
+        onClick={props.handleSubmitQuestion}
+        color="primary"
+      >
         That's my final answer
       </Button>
     </Container>

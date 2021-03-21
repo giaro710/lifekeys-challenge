@@ -18,15 +18,13 @@ const CoursesPage = ({ courses }) => {
   const renderCards = () => {
     return courses.map((course) => {
       return (
-        <Col key={course.id}>
-          <CourseCard
-            key={course.id}
-            id={course.id}
-            title={course.title}
-            subtitle={course.subtitle}
-            image={course.img}
-          />
-        </Col>
+        <CourseCard
+          key={course.id}
+          id={course.id}
+          title={course.title}
+          subtitle={course.subtitle}
+          image={course.img}
+        />
       );
     });
   };
@@ -40,9 +38,7 @@ const CoursesPage = ({ courses }) => {
         </h6>
       </Container>
 
-      <Container>
-        <Row>{renderCards()}</Row>
-      </Container>
+      <Container>{renderCards()}</Container>
     </>
   );
 };

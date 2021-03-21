@@ -1,7 +1,9 @@
 .green {
-  color: green;
+  border-color: rgb(20, 189, 20);
+  background: rgba(20, 189, 20, 0.253);
 }
 
 .red {
-  color: red;
+  border-color: rgb(255, 0, 0);
+  background: rgba(255, 0, 0, 0.24);
 }

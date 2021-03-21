@@ -9,6 +9,8 @@ import { findCourse } from "../../../helpers/helpers";
 const QuizPage = ({ courses }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [clickedSubmit, setClickedSubmit] = useState(false);
+  const [answerValue, setAnswerValue] = useState("");
+  console.log("answerValue", answerValue);
 
   const { id: paramsId } = useParams();
   const course = findCourse(courses, paramsId);
@@ -75,9 +77,13 @@ const QuizPage = ({ courses }) => {
       setCurrentQuestion(questions.length - 1);
     }
     setClickedSubmit(false);
+    setAnswerValue("");
   };
 
   const handleSubmitQuestion = () => {
+    if (answerValue === "") {
+      return;
+    }
     setClickedSubmit(true);
   };
 
@@ -85,7 +91,7 @@ const QuizPage = ({ courses }) => {
     currentQuestion !== questions.length - 1 ? (
       <Button
         onClick={handleNextButtonClick}
-        className="mt-5 float-right"
+        className="my-5 float-right"
         color="success"
         disabled={!clickedSubmit}
       >
@@ -93,7 +99,7 @@ const QuizPage = ({ courses }) => {
       </Button>
     ) : (
       <Link to="/courses/2/end">
-        <Button className="mt-5 float-right" color="primary">
+        <Button className="my-5 float-right" color="primary">
           END
         </Button>
       </Link>
@@ -112,8 +118,10 @@ const QuizPage = ({ courses }) => {
             <Col>
               <QuizCard
                 question={questions[currentQuestion]}
-                handleSubmit={handleSubmitQuestion}
+                handleSubmitQuestion={handleSubmitQuestion}
                 clickedSubmit={clickedSubmit}
+                answerValue={answerValue}
+                setAnswerValue={setAnswerValue}
               />
             </Col>
           </Row>

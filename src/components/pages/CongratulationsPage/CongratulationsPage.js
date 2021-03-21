@@ -1,7 +1,34 @@
 import React from "react";
+import { Link, useParams } from "react-router-dom";
+import Jumbo from "../../../hoc/Jumbo/Jumbo";
+import { Container, Button } from "reactstrap";
+import { findCourse } from "../../../helpers/helpers";
 
-const CongratulationsPage = () => {
-  return <div>Congratulations for finishing the course</div>;
+const CongratulationsPage = ({ courses }) => {
+  const { id: paramsId } = useParams();
+  const course = findCourse(courses, paramsId);
+
+  return (
+    <Container>
+      <Jumbo title={course.title} subtitle={course.subtitle} />
+
+      <h1 className="text-center mt-3">Congratulations</h1>
+      <h4 className="text-center mt-5" style={{ lineHeight: "40px" }}>
+        Now you master{" "}
+        <span style={{ color: "rgb(20, 189, 20)" }}>{course.title}</span>.
+        <br></br>But remember that each new acquaintance is not a point of
+        arrival but of departure. <br></br>We wish you Good onward Journey
+      </h4>
+
+      <h4 className="text-center mt-5">
+        Aim for what you don't know you will get far
+      </h4>
+
+      <Link to="/courses">
+        <Button>Courses</Button>
+      </Link>
+    </Container>
+  );
 };
 
 export default CongratulationsPage;

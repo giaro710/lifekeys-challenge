@@ -40,7 +40,7 @@ const App = () => {
           <Route
             path="/courses/:id/end"
             exact
-            component={CongratulationsPage}
+            component={() => <CongratulationsPage courses={data.courses} />}
           />
         </BrowserRouter>
       </Layout>

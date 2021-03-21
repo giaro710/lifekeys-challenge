@@ -6,8 +6,8 @@ const Jumbo = ({ title, subtitle }) => {
     <div>
       <Jumbotron fluid>
         <Container fluid>
-          <h1 className="display-3">{title}</h1>
-          <p className="lead">{subtitle}</p>
+          <h1 className="display-3 ml-4">{title}</h1>
+          <p className="lead ml-4">{subtitle}</p>
         </Container>
       </Jumbotron>
     </div>
