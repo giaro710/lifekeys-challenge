@@ -3,9 +3,9 @@ export const data = {
     {
       id: 1,
       title: "Indian Cuisine",
+      color: "#cf9a1d",
       subtitle:
         "Discover spicy flavours and bright colors to bring your kitchen to life",
-      img: "/assets/images/cooking-min2.jpg",
       content: [
         {
           title: "The importance of olive oil",
@@ -77,9 +77,9 @@ export const data = {
     {
       id: 2,
       title: "Photography",
+      color: "#638dd2",
       subtitle:
         "Master the art of light, be ready to steal a piece af the world with your camera",
-      img: "/assets/images/photography-min.jpg",
       content: [
         {
           title: "The importance of olive oil",
@@ -150,9 +150,9 @@ export const data = {
     {
       id: 3,
       title: "Music Theory",
+      color: "#6f647a",
       subtitle:
         "Music is painting with sounds. Learn the basics of the fourth art",
-      img: "/assets/images/music-min.jpg",
       content: [
         {
           title: "The importance of olive oil",
@@ -223,9 +223,9 @@ export const data = {
     {
       id: 4,
       title: "Radio speaking",
+      color: "#a43c35",
       subtitle:
         "Are you wondering how to talk, interview and chose the right music? Here's your answers",
-      img: "/assets/images/radio-speaking-min.jpg",
       content: [
         {
           title: "The importance of olive mozzarella",
@@ -296,9 +296,9 @@ export const data = {
     {
       id: 5,
       title: "Social Marketing",
+      color: "#3749a9",
       subtitle:
         "Your brand needs visibiliy. Here all the secret to gain social success",
-      img: "/assets/images/social-marketing-min.jpg",
       content: [
         {
           title: "The importance of olive oil",
@@ -369,9 +369,10 @@ export const data = {
     {
       id: 6,
       title: "Mindfullness",
+      color: "#b9d394",
       subtitle:
         "Breathe. Learn more about yourself and discover your soul through meditation",
-      img: "/assets/images/yoga-min.jpg",
+
       content: [
         {
           title: "The importance of olive oil",

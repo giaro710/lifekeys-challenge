@@ -10,7 +10,11 @@ const CongratulationsPage = ({ courses }) => {
 
   return (
     <Container>
-      <Jumbo title={course.title} subtitle={course.subtitle} />
+      <Jumbo
+        id={course.color}
+        title={course.title}
+        subtitle={course.subtitle}
+      />
 
       <h1 className="text-center mt-3">Congratulations</h1>
       <h4 className="text-center mt-5" style={{ lineHeight: "40px" }}>

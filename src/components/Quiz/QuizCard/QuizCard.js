@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Container, Button, Label, Input } from "reactstrap";
+import React from "react";
+import { Container, Button } from "reactstrap";
 
 import SingleAnswer from "../Answers/SingleAnswer/SingleAnswer";
 

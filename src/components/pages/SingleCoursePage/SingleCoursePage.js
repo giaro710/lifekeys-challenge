@@ -10,6 +10,7 @@ const SingleCoursePage = ({ courses }) => {
 
   const { id: paramsId } = useParams();
   const course = findCourse(courses, paramsId);
+  console.log(course.color);
 
   const pageContents = course.content;
 
@@ -43,7 +44,12 @@ const SingleCoursePage = ({ courses }) => {
 
   return (
     <div className="mb-5">
-      <Jumbo title={course.title} subtitle={course.subtitle} />
+      <Jumbo
+        color={course.color}
+        title={course.title}
+        subtitle={course.subtitle}
+      />
+
       <Container>
         <Row>
           <Col>

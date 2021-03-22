@@ -111,7 +111,11 @@ const QuizPage = ({ courses }) => {
 
   return (
     <>
-      <Jumbo title={course.title} subtitle={course.subtitle} />
+      <Jumbo
+        color={course.color}
+        title={course.title}
+        subtitle={course.subtitle}
+      />
       <div>
         <h1 className="text-center">Final test</h1>
         <Container>

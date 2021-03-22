@@ -4,6 +4,8 @@ import { Container } from "reactstrap";
 
 import { data } from "./data";
 
+import ScrollToTop from "./hoc/ScrollToTop/ScrollToTop";
+
 import Topbar from "./hoc/Topbar/Topbar";
 import CoursesPage from "./components/pages/CoursesPage/CoursesPage";
 import SingleCoursePage from "./components/pages/SingleCoursePage/SingleCoursePage";
@@ -21,26 +23,29 @@ const App = () => {
       <Container className="mt-5">
         <BrowserRouter>
           <Switch>
-            <Route
-              path="/courses"
-              exact
-              component={() => <CoursesPage courses={data.courses} />}
-            />
-            <Route
-              path="/courses/:id/pages"
-              exact
-              component={() => <SingleCoursePage courses={data.courses} />}
-            />
-            <Route
-              path="/courses/:id/quiz"
-              exact
-              component={() => <QuizPage courses={data.courses} />}
-            />
-            <Route
-              path="/courses/:id/end"
-              exact
-              component={() => <CongratulationsPage courses={data.courses} />}
-            />
+            <ScrollToTop>
+              <Route
+                path="/courses"
+                exact
+                component={() => <CoursesPage courses={data.courses} />}
+              />
+              <Route
+                path="/courses/:id/pages"
+                exact
+                component={() => <SingleCoursePage courses={data.courses} />}
+              />
+              <Route
+                path="/courses/:id/quiz"
+                exact
+                component={() => <QuizPage courses={data.courses} />}
+              />
+              <Route
+                path="/courses/:id/end"
+                exact
+                component={() => <CongratulationsPage courses={data.courses} />}
+              />
+            </ScrollToTop>
+
             <Route render={() => <Redirect to={{ pathname: "/courses" }} />} />
           </Switch>
         </BrowserRouter>
