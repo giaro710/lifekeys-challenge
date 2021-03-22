@@ -14,7 +14,6 @@ const CoursesPage = ({ courses }) => {
           id={course.id}
           title={course.title}
           subtitle={course.subtitle}
-          image={course.img}
         />
       );
     });

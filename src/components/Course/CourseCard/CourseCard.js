@@ -9,14 +9,16 @@ import {
   CardImg,
 } from "reactstrap";
 
-// import img from "../../../assets/images/cooking-min.jpg";
-
-const CourseCard = ({ id, title, subtitle, image }) => {
-  console.log("imageurl", `${image}`);
+const CourseCard = ({ id, title, subtitle }) => {
   return (
     <div style={{ width: "45%" }}>
       <Card className="my-3">
-        <CardImg top width="100%" src={`${image}`} alt="Card image cap" />
+        <CardImg
+          top
+          width="100%"
+          src={`/images/${id}.jpg`}
+          alt="Card image cap"
+        />
         <CardBody>
           <CardTitle style={{ fontWeight: "700" }} tag="h5">
             {title}

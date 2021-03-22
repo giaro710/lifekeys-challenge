@@ -3,24 +3,28 @@ import { Container, Button, Label, Input } from "reactstrap";
 
 import SingleAnswer from "../Answers/SingleAnswer/SingleAnswer";
 
-import AllAnswers from "../Answers/AllAnswers";
-
-const QuizCard = (props) => {
+const QuizCard = ({
+  question,
+  answerValue,
+  clickedSubmit,
+  setAnswerValue,
+  handleQuestionSubmit,
+}) => {
   const renderChoices = () => {
-    return props.question.answers.map((answer, index) => {
+    return question.answers.map((answer, index) => {
       return (
         <SingleAnswer
           key={answer.answerText}
-          type={props.question.type === "multipleChoice" ? "checkbox" : "radio"}
+          type={question.type === "multipleChoice" ? "checkbox" : "radio"}
           name={
-            props.question.type === "multipleChoice"
+            question.type === "multipleChoice"
               ? `checkbox-btn-${index}`
               : `radio-btn`
           }
-          answerValue={props.answerValue}
+          answerValue={answerValue}
           text={answer.answerText}
           isCorrect={answer.isCorrect}
-          clickedSubmit={props.clickedSubmit}
+          clickedSubmit={clickedSubmit}
           onAnswerChange={handleAnswerChange}
         />
       );
@@ -28,19 +32,17 @@ const QuizCard = (props) => {
   };
 
   const handleAnswerChange = (e) => {
-    console.log("value", e.target.value);
-    props.setAnswerValue(e.target.value);
+    setAnswerValue(e.target.value);
   };
 
   return (
     <Container className="border rounded p-4 pl-0 mt-5">
-      <h5 className="mb-2">{props.question.questionText}</h5>
+      <h3 className="mb-2">{question.questionText}</h3>
       <Container onChange={handleAnswerChange}>{renderChoices()}</Container>
       <Button
         className="mt-5 mr-5 ml-1"
-        size="lg"
         block
-        onClick={props.handleSubmitQuestion}
+        onClick={handleQuestionSubmit}
         color="primary"
       >
         ANSWER

@@ -10,7 +10,6 @@ const QuizPage = ({ courses }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [clickedSubmit, setClickedSubmit] = useState(false);
   const [answerValue, setAnswerValue] = useState("");
-  console.log("answerValue", answerValue);
 
   const { id: paramsId } = useParams();
   const course = findCourse(courses, paramsId);
@@ -80,7 +79,7 @@ const QuizPage = ({ courses }) => {
     setAnswerValue("");
   };
 
-  const handleSubmitQuestion = () => {
+  const handleQuestionSubmit = () => {
     if (answerValue === "") {
       return;
     }
@@ -90,6 +89,7 @@ const QuizPage = ({ courses }) => {
   const button =
     currentQuestion !== questions.length - 1 ? (
       <Button
+        style={{ background: "#e28336", border: "none" }}
         onClick={handleNextButtonClick}
         className="my-5 float-right"
         color="success"
@@ -98,13 +98,13 @@ const QuizPage = ({ courses }) => {
         NEXT QUESTION
       </Button>
     ) : (
-      <Link to="/courses/2/end">
+      <Link to={`/courses/${course.id}/end`}>
         <Button
           style={{ background: "#e28336", border: "none" }}
           className="my-5 float-right"
           disabled={!clickedSubmit}
         >
-          END
+          CONCLUSION
         </Button>
       </Link>
     );
@@ -113,16 +113,13 @@ const QuizPage = ({ courses }) => {
     <>
       <Jumbo title={course.title} subtitle={course.subtitle} />
       <div>
-        <h1>Let's discover how much you know about it</h1>
-        <h2>
-          Test your knowledge of the argument to consolidate what you've learned
-        </h2>
+        <h1 className="text-center">Final test</h1>
         <Container>
           <Row>
             <Col>
               <QuizCard
                 question={questions[currentQuestion]}
-                handleSubmitQuestion={handleSubmitQuestion}
+                handleQuestionSubmit={handleQuestionSubmit}
                 clickedSubmit={clickedSubmit}
                 answerValue={answerValue}
                 setAnswerValue={setAnswerValue}

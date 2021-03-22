@@ -24,15 +24,18 @@ const SingleCoursePage = ({ courses }) => {
   const button =
     currentContent !== pageContents.length - 1 ? (
       <Button
+        style={{ background: "#e28336", border: "none", fontWeight: 500 }}
         onClick={handleNextButtonClick}
         className="mt-5 float-right"
-        color="success"
       >
         NEXT
       </Button>
     ) : (
       <Link to={`/courses/${course.id}/quiz`}>
-        <Button className="mt-5 float-right" color="primary">
+        <Button
+          style={{ background: "#e28336", border: "none", fontWeight: 500 }}
+          className="mt-5 float-right"
+        >
           GO TO THE QUIZ
         </Button>
       </Link>

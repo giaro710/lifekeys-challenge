@@ -14,8 +14,7 @@ const CongratulationsPage = ({ courses }) => {
 
       <h1 className="text-center mt-3">Congratulations</h1>
       <h4 className="text-center mt-5" style={{ lineHeight: "40px" }}>
-        Now you master{" "}
-        <span style={{ color: "rgb(20, 189, 20)" }}>{course.title}</span>.
+        Now you master <span style={{ color: "#e28336" }}>{course.title}</span>.
         <br></br>But remember that each new acquaintance is not a point of
         arrival but of departure. <br></br>We wish you Good onward Journey
       </h4>
