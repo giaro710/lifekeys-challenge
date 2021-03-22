@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { Button, Container, Row, Col } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import Jumbo from "../../Layout/Jumbo/Jumbo";
+import Btn from "../../Layout/Btn/Btn";
 import CourseContent from "../../Course/CourseContent/CourseContent";
 import { findCourse } from "../../../helpers/helpers";
 
@@ -24,21 +25,10 @@ const SingleCoursePage = ({ courses }) => {
 
   const button =
     currentContent !== pageContents.length - 1 ? (
-      <Button
-        style={{ background: "#e28336", border: "none", fontWeight: 500 }}
-        onClick={handleNextButtonClick}
-        className="mt-5 float-right"
-      >
-        NEXT
-      </Button>
+      <Btn onClick={handleNextButtonClick} text="NEXT" floatRight />
     ) : (
       <Link to={`/courses/${course.id}/quiz`}>
-        <Button
-          style={{ background: "#e28336", border: "none", fontWeight: 500 }}
-          className="mt-5 float-right"
-        >
-          GO TO THE QUIZ
-        </Button>
+        <Btn onClick={handleNextButtonClick} text="GO TO THE QUIZ" floatRight />
       </Link>
     );
 

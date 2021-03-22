@@ -11,7 +11,7 @@ const CongratulationsPage = ({ courses }) => {
   return (
     <Container>
       <Jumbo
-        id={course.color}
+        color={course.color}
         title={course.title}
         subtitle={course.subtitle}
       />

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Container, Row, Col, Button } from "reactstrap";
 import Jumbo from "../../Layout/Jumbo/Jumbo";
+import Btn from "../../Layout/Btn/Btn";
 import QuizCard from "../../Quiz/QuizCard/QuizCard";
 
 import { findCourse } from "../../../helpers/helpers";
@@ -88,29 +89,25 @@ const QuizPage = ({ courses }) => {
 
   const button =
     currentQuestion !== questions.length - 1 ? (
-      <Button
-        style={{ background: "#e28336", border: "none" }}
+      <Btn
         onClick={handleNextButtonClick}
-        className="my-5 float-right"
-        color="success"
+        text="NEXT QUESTION"
         disabled={!clickedSubmit}
-      >
-        NEXT QUESTION
-      </Button>
+        floatRight
+      />
     ) : (
       <Link to={`/courses/${course.id}/end`}>
-        <Button
-          style={{ background: "#e28336", border: "none" }}
-          className="my-5 float-right"
+        <Btn
+          onClick={handleNextButtonClick}
+          text="CONCLUSION"
+          floatRight
           disabled={!clickedSubmit}
-        >
-          CONCLUSION
-        </Button>
+        />
       </Link>
     );
 
   return (
-    <>
+    <div className="mb-5">
       <Jumbo
         color={course.color}
         title={course.title}
@@ -135,7 +132,7 @@ const QuizPage = ({ courses }) => {
           </Row>
         </Container>
       </div>
-    </>
+    </div>
   );
 };
 
