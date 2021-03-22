@@ -11,7 +11,6 @@ const SingleCoursePage = ({ courses }) => {
 
   const { id: paramsId } = useParams();
   const course = findCourse(courses, paramsId);
-  console.log(course.color);
 
   const pageContents = course.content;
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import {
   Card,
   CardBody,
@@ -8,6 +9,7 @@ import {
   CardText,
   CardImg,
 } from "reactstrap";
+import Btn from "../../Layout/Btn/Btn";
 
 const CourseCard = ({ id, title, subtitle }) => {
   return (
@@ -25,14 +27,14 @@ const CourseCard = ({ id, title, subtitle }) => {
           </CardTitle>
           <CardText>{subtitle}</CardText>
         </CardBody>
-        <Link to={`/courses/${id}/pages`}>
-          <Button
+        <Link to={`/courses/${id}/pages`} style={{ textDecoration: "none" }}>
+          {/* <Button
             style={{ background: "#e28336", border: "none" }}
             className="m-3 float-right"
-            color="primary"
           >
             Discover
-          </Button>
+          </Button> */}
+          <Btn text="Discover" block marginX />
         </Link>
       </Card>
     </div>

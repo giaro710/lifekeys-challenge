@@ -6,10 +6,15 @@ const Jumbo = ({ color, title, subtitle }) => {
     <div className="my-5">
       <Jumbotron fluid style={{ background: color, color: "#fff" }}>
         <Container fluid>
-          <h1 style={{ fontWeight: "600" }} className="display-3 ml-4">
+          <h1
+            style={{ fontWeight: "600", color: "#fff" }}
+            className="display-3 ml-4"
+          >
             {title}
           </h1>
-          <p className="lead ml-4">{subtitle}</p>
+          <p className="lead ml-4" style={{ color: "#fff" }}>
+            {subtitle}
+          </p>
         </Container>
       </Jumbotron>
     </div>

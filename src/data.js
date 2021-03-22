@@ -26,11 +26,11 @@ export const data = {
           type: "boolean",
           answers: [
             {
-              answerText: "true",
+              answerText: "True",
               isCorrect: false,
             },
             {
-              answerText: "false",
+              answerText: "False",
               isCorrect: true,
             },
           ],
