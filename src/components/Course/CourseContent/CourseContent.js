@@ -4,9 +4,20 @@ import "./CourseContent.css";
 const CourseContent = ({ content: { title }, content: { textContent } }) => {
   return (
     <>
-      <h3>{title}</h3>
+      <h3
+        style={{
+          fontWeight: "600",
+          // fontSize: "25px",
+          textDecoration: "none",
+        }}
+      >
+        {title}
+      </h3>
       <p className="text-justify">{textContent}</p>
-      <p className="text-justify contentParagraph">
+      <p
+        className="text-justify contentParagraph"
+        style={{ lineHeight: "40px", fontSize: "1.2rem", fontWeight: "300" }}
+      >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Maecenas volutpat
         blandit aliquam etiam erat velit scelerisque in dictum. Adipiscing diam
