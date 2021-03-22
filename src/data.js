@@ -8,16 +8,20 @@ export const data = {
         "Discover spicy flavours and bright colors to bring your kitchen to life",
       content: [
         {
-          title: "The importance of olive oil",
-          textContent: "la cucina italiana piace",
+          title: "Start With The Spices And Other Supplies",
+          textContent:
+            "First things first, you’ll need to make sure you have the spices and supplies you need to start cooking. If you have “curry powder,” in your spice cabinet, we’ve got bad news for you – you won’t be using it in Indian cooking! “Curry powder” is not Indian at all. In India, curry spice mixes are called “garam masala.” To begin equipping your spice cabinet, you’ll want: Garam masala, preferably from an Indian store Green and black cardamom Turmeric powder Cumin powder Red chili/cayenne pepper powder Coriander powder Whole cumin seeds Whole brown mustard seeds Cloves Cinnamon/cassia bark Black pepper Nutmeg Mace Fenugreek You’ll also want plenty of ginger and garlic on-hand, as well as cilantro, bay leaves, and some other spices and fresh herbs, depending on the recipes you’re cooking. Yes, this sounds like a lot – so if you’re just getting started, we recommend consulting the recipe you want to cook, and just purchasing the spices for that specific recipe. Then, if you end up loving the process of cooking Indian food, you can try new recipes – and add spices to your cabinet as necessary. You’ll also need basmati rice – which you can find in bulk at most Indian stores or ethnic supermarkets. As far as cooking tools and utensils, you probably already have everything you need. As long as you have a wok, a set of high-quality pans, a pressure cooker, and a steamer, you can cook pretty much any Indian dish. ",
         },
         {
-          title: "The importance of olive oil",
-          textContent: "la cucina italiana piace",
+          title: "Understand The Basic Patterns Of Most Indian Recipes",
+          textContent:
+            "If you’ve ever spent a lot of time cooking a particular type of cuisine – such as Italian – you’ll know that many dishes use a similar pattern. Italian pasta meals, for example, usually start by making a sauce using olive oil, a tomato base, fresh herbs, and garlic. Then, you may fry some meat if the recipe calls for it, boil the noodles – you get the picture. You will begin by heating some kind of oil in a pan To the hot pan, you will add whole spices which you will saute, such as cardamom, cloves, cumin, or cinnamon sticks. This is known as “tempering” Next, you’ll add vegetables – usually onions or some other type of vegetable, followed by tomatoes After this, you’ll add more powdered spices to achieve the desired flavors The next step is to create a base by adding water to create a curry, adding dairy for a dish like butter chicken, or even adding the mixture to lentils to create daal, and cook it for some time These above steps are generalized, of course, and can vary a bit. But mostly, when you cook Indian food, you will start by tempering oil, frying some vegetables, and adding spices and a sauce base. This is the basis for a lot of Indian dishes that you’ll be making when you start out, from butter chicken to chicken tikka masala, saag paneer, biryani and more.",
         },
         {
-          title: "The importance of olive oil",
-          textContent: "la cucina italiana piace",
+          title:
+            "Experiment With One Dish Until You Master It – Then Choose A New One!",
+          textContent:
+            "The next step is to try cooking the dish you want to make – and to be patient with yourself. When you’re cooking a new dish for the first time, you’re going to make mistakes. Maybe your curry will be watery, or won’t be flavorful enough. Maybe you burn some of your onions. Perhaps your chicken is overdone in your tikka – that’s okay! Every time you make a dish, you will improve. As you become more comfortable with the cooking process for the dish you’re making, it will begin to taste better and better! Eventually, you’ll master it – and the skills you’ve learned making that dish will transfer to other dishes, too. Then, you can pick a new dish to try and master – and continue doing so, until you know how to cook all of your favorite Indian foods. The best way to learn is by doing, and with the tips and resources above, you’ll have all of the information that you need to cook delicious Indian cuisine – even if you’ve never made an Indian dish before.",
         },
       ],
       questions: [
@@ -82,16 +86,24 @@ export const data = {
         "Master the art of light, be ready to steal a piece af the world with your camera",
       content: [
         {
-          title: "The importance of olive oil",
-          textContent: "la cucina italiana piace",
+          title: "Move Away from the AUTO Mode",
+          textContent:
+            "If you only ever take images on AUTO mode, then you would be as well buying a simple point and shoot camera and leaving it there. Your DSLR does not take better photos just because it costs more - the reason you can take better photos with it is because you get more control over your settings.  So if you don’t take that control, you won’t get better images! In time, you definitely want to shoot in manual mode. Manual mode is when you take control of all THREE elements of exposure (aperture, shutter speed and ISO) and get the right exposure for the scene you are trying to photograph (which may be an entirely different exposure than the one your camera would give you!) So if you  are on AUTO at the moment, take your first steps away from this with Aperture Priority Mode. If you are already on Aperture Priority mode, then make the switch to manual! I promise, once you truly learn this, you’ll never go back as you’ll see the massive effect this can have on your photos. ",
         },
         {
-          title: "The importance of olive oil",
-          textContent: "la cucina italiana piace",
+          title: "Think Light first, Location Second",
+          textContent:
+            "Light is the make or break element of your image - more than your camera settings, or your composition, and yes, even your subject! Even the most bland and boring scenes or subjects can be made to look AMAZING just by your use of light. There are several ways you can light your subject, but if you are just starting out, then I recommend that you start by learning how to use the light indoors. Why I hear you ask? Well, light indoors is MUCH easier to deal with because we’re no longer at the mercy of mother nature, which can be a little bit more challenging! ",
         },
         {
-          title: "The importance of olive oil",
-          textContent: "la cucina italiana piace",
+          title: "Take control of your OTHER settings",
+          textContent:
+            "Once you have started taking control of your exposure by shooting in manual mode, and you are learning how to use light more effectively, then you can move onto changing the OTHER settings in your camera. A big one for this is the settings for your FOCUS. So many people struggle with getting sharp photos - and it’s easy to see why! There is a LOT of different elements that go into getting a sharp photo, so it’s not a case of throwing some random tips at you and hoping for the best :-) But a really common one for new photographers is that they’re using too slow a shutter speed for what they are photographing, especially if they are not shooting in manual mode. Keep this in mind - the minimum shutter speed for handholding a lens is at least 1/60 (sometimes more depending on the lens) and the absolute minimum shutter speed is 1/125 for a person. Did you note that i said MINIMUM? Ideally, you always want to be higher than these minimum speeds, especially if you’re photographing a child (I rarely go under 1/250 for a child, even if they’re still)",
+        },
+        {
+          title: "Learn Simple Composition Rules",
+          textContent:
+            "Now that we have our camera settings in place, and we know how to use light, we can start to get super creative with our photos! Composition is simply how you arrange the various elements within the frame in order to make your photos more engaging and impactful.  You can use the rule of thirds, framing, leading lines (which is what you see below) to draw your viewers eye around the frame or make your images more dynamic. Again, aiming at those who are new to photography - start with the rule of thirds. It’s the most simple one to use, but it has a big impact. Simply imagine that your photograph is divided into nine equal sections by two horizontal and two vertical lines like the image below. Our eyes are naturally drawn to the points where these four lines intersect (where those little pink circles are) Placing a point of interest on one of these intersections, or simply placing elements along one of the lines, gives the photo more balance and make it more appealing to the viewer!",
         },
       ],
       questions: [
@@ -155,16 +167,19 @@ export const data = {
         "Music is painting with sounds. Learn the basics of the fourth art",
       content: [
         {
-          title: "The importance of olive oil",
-          textContent: "la cucina italiana piace",
+          title: "Learn to Read Music",
+          textContent:
+            "It will be difficult to teach yourself songs if you can't read sheet music. Although you can learn by ear, if you don't have formal training or a serious gift that could prove quite difficult. Learning to read music will also benefit you in that you won't necessarily have to hear the song to know how it is played, though that does help tremendously. There are several free programs on the internet that give you a brief intro to reading music, and those work well for getting you started. If you want to continue on and become very proficient at reading music then either a lot of practice is in order or you could invest in an online piano course. These are usually about as expensive as a book at the local music store, but provide you with videos and audio clips as well to help you along in the process. There are several articles here that help you get started with reading music and should get you on track to teaching yourself to read music. The other option is to invest in a book from the local bookstore. It will be a little bit less interactive, but certainly with some effort will teach you to read music. Look for freebies online before you do this one though.",
         },
         {
-          title: "The importance of olive oil",
-          textContent: "la cucina italiana piace",
+          title: "Find Music Sheet",
+          textContent:
+            "Sheet music is essential to learning to play the piano. It tells you exactly how a certain song is played. It is an incredibly useful tool when teaching yourself to play because it lets you practice single measures at a time and have the instructions right in front of you! There are some places online that let you view sheet music for free with perhaps a trail membership or something similar but sometimes they don't let you print the music out. Printing the music is in my opinion essential to the learning process. This lets you write notes on the page and keep better track of issues you are having with a song. Some sheet music places let you have total access to the sheet music for an inexpensive annual fee while others charge a small fee for each download. I prefer the monthly subscription model because then I can download and print as much music as I want to. If you are only looking to learn a few songs, then perhaps at this point the pay-per-download model of sheet music website is a better option, allowing you to pay for how much you actually use the service. Physical sheet music in music stores is another option, though it is usually much more costly because the publisher must print and distribute the sheet music, then of course the music store adds their own margin on top of that...it adds up pretty quick when you are considering purchasing more than a few pieces of music. ",
         },
         {
-          title: "The importance of olive oil",
-          textContent: "la cucina italiana piace",
+          title: "Practice Your Favorite Songs",
+          textContent:
+            "This one is the most obvious, yet most overlooked. In order to improve you piano skills, you must practice a lot. And when I say practice, I don't mean just trying to hammer through a song or two every day, I mean actually working on your form, posture, finger strength, agility and endurance in the correct ways so that when you do play the sheet music you have invested in, you are learning the physical skills to play the music well. A good practice program involves some warm ups, scales, new songs being attempted, working on old songs, sight reading (similar to new songs being attempted) and other various technical exercises. You can find a few good practice routines on this site as well as searching Google for others.",
         },
       ],
       questions: [
@@ -228,16 +243,24 @@ export const data = {
         "Are you wondering how to talk, interview and chose the right music? Here's your answers",
       content: [
         {
-          title: "The importance of olive mozzarella",
-          textContent: "la cucina italiana piace",
+          title: "Know Your Listener",
+          textContent:
+            "Understand everything about your audience; why they listen to you, when they listen, what they listen on. Build a comprehensive image in your mind of your listeners and who they are. Your aim is to create 'me too' moments with your listener and the more you understand them the easier that will be. Once you understand them, draw from your own experiences and relate them to your listeners. People yearn for the feeling of connection that these “me too” moments can bring.",
         },
         {
-          title: "The importance of olive mozzarella",
-          textContent: "la cucina italiana piace",
+          title: "Make Your Listener Care",
+          textContent:
+            "I believe (within reason and Ofcom guidelines) you can talk about anything on the radio. But if you talk about it in a boring, unengaging way then no one will care. If you talk about something, make it gripping, make it a story, unleash your inner poet and turn it into something that will grab your listeners and draw them into the conversation with you. ",
         },
         {
-          title: "The importance of olive mozzarella",
-          textContent: "la cucina italiana piace",
+          title: "Talk to ONE Person",
+          textContent:
+            "You will know from your own experience listening to radio that it can be a solitary experience. Your audience is experiencing your show as individuals, not as a group of people. Avoid terms like: 'anyone out there', 'you all', even 'some of you' implies you’re disconnected from your listener. An example of this is on YouTube with hosts saying 'hey guys' or 'hi everyone', which talks to a group rather than an individual.The more you cultivate 'you and I' language the more you are likely to engage. ",
+        },
+        {
+          title: "Be in Charge",
+          textContent:
+            "You are the host - You have a responsibility to be in control of the show at all times. Keep your voice energetic without getting forceful and guide your listener through what you’re doing. Never confuse them by being overly wordy or rambling, and always try to be concise and stay focused on the current subject matter whenever you’re talking. No one is going to complain if you play another song instead of talking and sometimes few words can have a greater impact than many.",
         },
       ],
       questions: [
@@ -301,16 +324,29 @@ export const data = {
         "Your brand needs visibiliy. Here all the secret to gain social success",
       content: [
         {
-          title: "The importance of olive oil",
-          textContent: "la cucina italiana piace",
+          title: "Have a strategy in place",
+          textContent:
+            "Just like with any other form of marketing, it’s extremely important to have a strategy in place. What is your brand persona? What are your goals for social media marketing? Do you have a clearly defined voice? Who is your target audience and why? Thinking through these questions and having clear answers will help you craft the right content to help you stay on message. What you definitely want to avoid is the “strategy” of throwing everything against the wall and seeing what sticks. What that’s actually called is not having a strategy and it’s a huge waste of time and resources. ",
         },
         {
-          title: "The importance of olive oil",
-          textContent: "la cucina italiana piace",
+          title: "Choose the right social network",
+          textContent:
+            "Just because a social media platform exists doesn’t necessarily mean you need to be on it. It’s important to figure out where your target audience lives, meaning what platform(s) does your audience use. If your target demographic is Baby Boomers it would be pointless for you to market your brand on TikTok where the audience skews very young. ",
         },
         {
-          title: "The importance of olive oil",
-          textContent: "la cucina italiana piace",
+          title: "It's not always about you",
+          textContent:
+            "Stop talking about yourself constantly. Social media should be about providing value to your audience, interacting, and being a part of the conversation. By sharing engaging and relevant content you are building brand awareness which will attract business over time. ",
+        },
+        {
+          title: "Focus on quality over quantity",
+          textContent:
+            "Another secret to social media success is paying attention to quality over quantity. You might think posting a dozen times a day will help your brand gain more reach and engagement, but that is only true if you can post high-quality content every time. Additionally, posting too frequently can alienate your followers as they may feel like you’re spamming them.",
+        },
+        {
+          title: "Analyze and optimize",
+          textContent:
+            "Social networking platforms provide detailed analytics that shows valuable insights about your audience, post-performance, and other metrics. Study that data and optimize your social media content accordingly. The longer you gather data the more valuable it becomes. You can more easily spot trends and figure out what works and what doesn’t.  ",
         },
       ],
       questions: [
@@ -375,16 +411,24 @@ export const data = {
 
       content: [
         {
-          title: "The importance of olive oil",
-          textContent: "la cucina italiana piace",
+          title: "Basics",
+          textContent:
+            "Mindfulness is a mind-body medicine practice, based on ancient Zen Buddhist meditation techniques, that was popularized by Jon Kabat-Zinn, a researcher at the University of Massachusetts Medical School. According to Kabat-Zinn, mindfulness is an internal resource that all of us already have within us. The idea is to channel or direct this resource to transform our relationships with stress, emotions, pain, and illness. Indeed, controlled research studies suggest that mindfulness-based interventions can effectively reduce symptoms in people with chronic pain, recurrent depression, anxiety disorders, substance abuse, binge-eating, and many other health conditions. Mindfulness interventions have also been shown to change the brain's grey matter and reactivity to emotional stimuli in ways that promote greater conscious control over emotion. While most people seem to think that mindfulness is a good thing, many people are confused about what exactly mindfulness is. Does it involve emptying the brain of thoughts, inducing relaxation, or going into a trance? Do you have to go live in an ashram and retreat from the material world to practice it effectively?  Is it a kind of religion or cult, and is it potentially dangerous?  In fact, none of the above have been shown to be true. Below is a description of some key concepts that can help illuminate what it means to have a mindful attitude to life.",
         },
         {
-          title: "The importance of olive oil",
-          textContent: "la cucina italiana piace",
+          title: "Key concepts(1)",
+          textContent:
+            "Focus on the Present Moment—When your thoughts get lost in thinking about the past or worrying about the future, you bring them back to what you are experiencing right now. You try to remain open to how things unfold in the present, rather than having preconceived ideas about how things will or should turn out. Being Fully Present—You are spaciously aware of whatever you are experiencing in the present moment as you go through your daily life. What do you feel in your body? What are you seeing, hearing, doing - right now? Openness to Experience—Rather than dreading and shutting out your own feelings and experiences because you think you can't handle them, you welcome with curiosity any thoughts and feelings that naturally arise, knowing they are merely sensations in the moment and the next moment can be different. You create mental spaciousness to contain these thoughts and fellings. Become aware of your experience as a flow of sensations, thoughts, and feelings and watch how these change and transform naturally over time.",
         },
         {
-          title: "The importance of olive oil",
-          textContent: "la cucina italiana piace",
+          title: "Key concepts(2)",
+          textContent:
+            "Non-Judgment—You don't categorize your thoughts and feelings as good or bad, try to change them, or feel compelled to act on them. All feelings have a purpose, whether to protect you from danger or open you to love. You watch and accept whatever arises in consciousness with an open mind. You extend this non-judging attitude to other people and things. Acceptance of Things as They Are—You don't try to force or change reality to fit your vision of what it should be, feel like a victim, or bemoan the unfairness of life. Instead, you try to see reality clearly and let it be as it is, knowing that you can tolerate whatever it is that comes up. You extend this acceptance to others, knowing they are the best judges of what is right for them. Connection—You feel connected to all living things and nature in being part of a larger whole. You reflect on and feel grateful for the cycle of life and the food, beauty, and protection that nature gives us. You know that all living beings want to feel happy and secure and avoid suffering and you feel connected by similarity of needs and experience.",
+        },
+        {
+          title: "Key concepts(3)",
+          textContent:
+            "Non-Attachment—You do not try to hold onto things, people, or experiences, knowing that life is in constant flow. Attachment comes from fear and is the basis of suffering. You learn to surf the wave of life, going with the flow and being confident in your own ability to adapt. When one door closes, another opens. Peace and Equanimity—You maintain an even-keel, not getting too swept up in life's highs and lows. You know that life is a cycle and you can't see the whole picture at any one moment. When things don't go your way, you stay firmly rooted in your own clear vision and values. You walk with a peaceful heart and adopt a non-harming, non-violent attitude. Compassion—You deal gently, kindly, and patiently with yourself and others. Rather than judging, or condemning, you open your heart to really listen and try to understand your own and other people's experiences. You allow yourself to feel other people's suffering. You love people not for what they can give you or because you need something from them, but because you connect and empathize with their experiences.",
         },
       ],
       questions: [

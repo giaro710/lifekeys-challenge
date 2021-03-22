@@ -5,15 +5,15 @@ const HeroSection = ({ title, subtitle }) => {
   return (
     <Container
       style={{ backgroundColor: "#e28336" }}
-      className="d-flex  align-items-center mb-5 py-5"
+      className="d-flex  align-items-center mb-5 py-5 pl-5"
     >
-      <div style={{ marginLeft: "30px" }}>
+      <div style={{ marginLeft: "30px", width: "30%" }}>
         <h1 style={{ fontSize: "80px", fontWeight: "700", color: "#fff" }}>
           {title}
         </h1>
         <p style={{ color: "#fff" }}>{subtitle}</p>
       </div>
-      <div>
+      <div style={{ width: "70%" }}>
         <img src="/images/hero.png" alt="hero-img" />
       </div>
     </Container>

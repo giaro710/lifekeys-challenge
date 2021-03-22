@@ -14,12 +14,20 @@ const SingleCoursePage = ({ courses }) => {
 
   const pageContents = course.content;
 
+  // const scrollToTop = () => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+  // };
+
   const handleNextButtonClick = () => {
     if (currentContent < pageContents.length - 1) {
       setCurrentContent(currentContent + 1);
     } else {
       setCurrentContent(pageContents.length - 1);
     }
+    // scrollToTop();
   };
 
   const button =
