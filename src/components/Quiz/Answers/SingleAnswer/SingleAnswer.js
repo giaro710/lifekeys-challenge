@@ -1,8 +1,6 @@
 import React from "react";
 import { Container, Input } from "reactstrap";
 
-import "./SingleAnswer.css";
-
 const SingleAnswer = ({
   type,
   name,
@@ -12,7 +10,7 @@ const SingleAnswer = ({
   clickedSubmit,
 }) => {
   const displayResultColor = () => {
-    let resultClass = "";
+    let resultClass;
     if (answerValue === "on") {
       if (clickedSubmit && isCorrect) {
         return (resultClass = "green");

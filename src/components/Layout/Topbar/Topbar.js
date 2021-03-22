@@ -11,9 +11,8 @@ const Topbar = () => {
             fontSize: "25px",
             textDecoration: "none",
           }}
-          className="logo"
+          className="logo mr-auto"
           href="/courses"
-          className="mr-auto"
         >
           Courses<span style={{ color: "#e28336" }}>.</span>
         </NavbarBrand>

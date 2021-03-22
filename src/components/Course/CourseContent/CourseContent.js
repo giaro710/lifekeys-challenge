@@ -1,5 +1,4 @@
 import React from "react";
-import "./CourseContent.css";
 
 const CourseContent = ({ content: { title }, content: { textContent } }) => {
   return (
@@ -7,9 +6,9 @@ const CourseContent = ({ content: { title }, content: { textContent } }) => {
       <h3
         style={{
           fontWeight: "600",
-          // fontSize: "25px",
           textDecoration: "none",
         }}
+        className="mb-4"
       >
         {title}
       </h3>

@@ -11,7 +11,7 @@ const HeroSection = ({ title, subtitle }) => {
         <h1 style={{ fontSize: "80px", fontWeight: "700", color: "#fff" }}>
           {title}
         </h1>
-        <p style={{ color: "#fff" }}>{subtitle}</p>
+        <h6 style={{ color: "#fff" }}>{subtitle}</h6>
       </div>
       <div style={{ width: "70%" }}>
         <img src="/images/hero.png" alt="hero-img" />

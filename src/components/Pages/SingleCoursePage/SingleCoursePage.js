@@ -14,20 +14,12 @@ const SingleCoursePage = ({ courses }) => {
 
   const pageContents = course.content;
 
-  // const scrollToTop = () => {
-  //   window.scrollTo({
-  //     top: 0,
-  //     behavior: "smooth",
-  //   });
-  // };
-
   const handleNextButtonClick = () => {
     if (currentContent < pageContents.length - 1) {
       setCurrentContent(currentContent + 1);
     } else {
       setCurrentContent(pageContents.length - 1);
     }
-    // scrollToTop();
   };
 
   const button =
@@ -53,12 +45,14 @@ const SingleCoursePage = ({ courses }) => {
             <CourseContent content={pageContents[currentContent]} />
           </Col>
         </Row>
-        <Row>
-          <Col>
-            <h6>{`Page ${currentContent + 1}/${pageContents.length}`}</h6>
-          </Col>
-          <Col>{button}</Col>
-        </Row>
+      </Container>
+      <Container className="d-flex justify-content-between align-items-center p-3">
+        <div>
+          <h6 style={{ color: "#787575" }} className="mb-0">{`Page ${
+            currentContent + 1
+          }/${pageContents.length}`}</h6>
+        </div>
+        <div>{button}</div>
       </Container>
     </div>
   );

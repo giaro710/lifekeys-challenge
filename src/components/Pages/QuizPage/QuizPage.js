@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { Container, Row, Col, Button } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import Jumbo from "../../Layout/Jumbo/Jumbo";
 import Btn from "../../Layout/Btn/Btn";
 import QuizCard from "../../Quiz/QuizCard/QuizCard";
@@ -16,59 +16,6 @@ const QuizPage = ({ courses }) => {
   const course = findCourse(courses, paramsId);
 
   const questions = course.questions;
-
-  // const questions = [
-  //   {
-  //     questionText: "piace la cucina italiana?",
-  //     type: "boolean",
-  //     answers: [
-  //       {
-  //         answerText: "true",
-  //         isCorrect: true,
-  //       },
-  //       {
-  //         answerText: "false",
-  //         isCorrect: false,
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     questionText: "ketchup sugli spaghetti?",
-  //     type: "singleChoice",
-  //     answers: [
-  //       {
-  //         answerText: "Sempre, fa bene",
-  //         isCorrect: false,
-  //       },
-  //       {
-  //         answerText: "Ogni tanto mi piace",
-  //         isCorrect: false,
-  //       },
-  //       {
-  //         answerText: "Mai e poi mai",
-  //         isCorrect: true,
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     questionText: "sigaretta dopo colazione?",
-  //     type: "multipleChoice",
-  //     answers: [
-  //       {
-  //         answerText: "Qualche volta aiuta",
-  //         isCorrect: true,
-  //       },
-  //       {
-  //         answerText: "Smetti di fumare",
-  //         isCorrect: false,
-  //       },
-  //       {
-  //         answerText: "D'obbligo",
-  //         isCorrect: true,
-  //       },
-  //     ],
-  //   },
-  // ];
 
   const handleNextButtonClick = () => {
     if (currentQuestion < questions.length - 1) {

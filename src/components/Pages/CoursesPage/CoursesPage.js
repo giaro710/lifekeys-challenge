@@ -1,5 +1,4 @@
 import React from "react";
-// import { Container, Row } from "reactstrap";
 import { Container } from "reactstrap";
 import HeroSection from "../../HeroSection/HeroSection";
 

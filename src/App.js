@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import { Container } from "reactstrap";
 
-import { data } from "./data";
+import { courses } from "./data.json";
 
 import ScrollToTop from "./hoc/ScrollToTop/ScrollToTop";
 
@@ -11,8 +11,6 @@ import CoursesPage from "./components/Pages/CoursesPage/CoursesPage";
 import SingleCoursePage from "./components/Pages/SingleCoursePage/SingleCoursePage";
 import QuizPage from "./components/Pages/QuizPage/QuizPage";
 import CongratulationsPage from "./components/Pages/CongratulationsPage/CongratulationsPage";
-
-import "./App.css";
 
 const App = () => {
   return (
@@ -27,26 +25,27 @@ const App = () => {
               <Route
                 path="/courses"
                 exact
-                component={() => <CoursesPage courses={data.courses} />}
+                component={() => <CoursesPage courses={courses} />}
               />
               <Route
                 path="/courses/:id/pages"
                 exact
-                component={() => <SingleCoursePage courses={data.courses} />}
+                component={() => <SingleCoursePage courses={courses} />}
               />
               <Route
                 path="/courses/:id/quiz"
                 exact
-                component={() => <QuizPage courses={data.courses} />}
+                component={() => <QuizPage courses={courses} />}
               />
               <Route
                 path="/courses/:id/end"
                 exact
-                component={() => <CongratulationsPage courses={data.courses} />}
+                component={() => <CongratulationsPage courses={courses} />}
+              />
+              <Route
+                render={() => <Redirect to={{ pathname: "/courses" }} />}
               />
             </ScrollToTop>
-
-            <Route render={() => <Redirect to={{ pathname: "/courses" }} />} />
           </Switch>
         </BrowserRouter>
       </Container>
