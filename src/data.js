@@ -100,11 +100,11 @@ export const data = {
           type: "boolean",
           answers: [
             {
-              answerText: "true",
+              answerText: "True",
               isCorrect: false,
             },
             {
-              answerText: "false",
+              answerText: "False",
               isCorrect: true,
             },
           ],
@@ -246,11 +246,11 @@ export const data = {
           type: "boolean",
           answers: [
             {
-              answerText: "true",
+              answerText: "True",
               isCorrect: true,
             },
             {
-              answerText: "false",
+              answerText: "False",
               isCorrect: false,
             },
           ],
@@ -260,7 +260,7 @@ export const data = {
           type: "singleChoice",
           answers: [
             {
-              answerText: "No interested. I listen only to Oasis",
+              answerText: "Not interested. I listen only to Oasis",
               isCorrect: false,
             },
             {
@@ -319,11 +319,11 @@ export const data = {
           type: "boolean",
           answers: [
             {
-              answerText: "true",
+              answerText: "True",
               isCorrect: false,
             },
             {
-              answerText: "false",
+              answerText: "False",
               isCorrect: true,
             },
           ],
@@ -389,52 +389,52 @@ export const data = {
       ],
       questions: [
         {
-          questionText: "When you have a guest make him/her feel home",
+          questionText: "In meditation is important to think at the past",
           type: "boolean",
           answers: [
             {
-              answerText: "true",
-              isCorrect: true,
+              answerText: "True",
+              isCorrect: false,
             },
             {
-              answerText: "false",
-              isCorrect: false,
+              answerText: "False",
+              isCorrect: true,
             },
           ],
         },
         {
-          questionText: "The right attitude towards new music is",
+          questionText: "Mindfullness is was popularized by:",
           type: "singleChoice",
           answers: [
             {
-              answerText: "No interested. I listen only to Oasis",
+              answerText: "Jon Kabat-Zann",
               isCorrect: false,
             },
             {
-              answerText: "Prejudice",
-              isCorrect: false,
-            },
-            {
-              answerText: "Curiosity",
+              answerText: "Jon Kabat-Zinn",
               isCorrect: true,
+            },
+            {
+              answerText: "Jon Kabat-Zenn",
+              isCorrect: false,
             },
           ],
         },
         {
-          questionText: "For better speaking is good to:",
+          questionText: "Key concepts of mindfullness are",
           type: "multipleChoice",
           answers: [
             {
-              answerText: "Warm the voice",
+              answerText: "Non-Attachment",
               isCorrect: true,
             },
             {
-              answerText: "No smoking",
+              answerText: "Compassion",
+              isCorrect: true,
+            },
+            {
+              answerText: "Judgement",
               isCorrect: false,
-            },
-            {
-              answerText: "Singing in the shower",
-              isCorrect: true,
             },
           ],
         },

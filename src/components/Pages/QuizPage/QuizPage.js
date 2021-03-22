@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Container, Row, Col, Button } from "reactstrap";
-import Jumbo from "../../../hoc/Jumbo/Jumbo";
+import Jumbo from "../../Layout/Jumbo/Jumbo";
 import QuizCard from "../../Quiz/QuizCard/QuizCard";
 
 import { findCourse } from "../../../helpers/helpers";

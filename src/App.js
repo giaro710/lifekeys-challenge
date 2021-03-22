@@ -6,11 +6,11 @@ import { data } from "./data";
 
 import ScrollToTop from "./hoc/ScrollToTop/ScrollToTop";
 
-import Topbar from "./hoc/Topbar/Topbar";
-import CoursesPage from "./components/pages/CoursesPage/CoursesPage";
-import SingleCoursePage from "./components/pages/SingleCoursePage/SingleCoursePage";
-import QuizPage from "./components/pages/QuizPage/QuizPage";
-import CongratulationsPage from "./components/pages/CongratulationsPage/CongratulationsPage";
+import Topbar from "./components/Layout/Topbar/Topbar";
+import CoursesPage from "./components/Pages/CoursesPage/CoursesPage";
+import SingleCoursePage from "./components/Pages/SingleCoursePage/SingleCoursePage";
+import QuizPage from "./components/Pages/QuizPage/QuizPage";
+import CongratulationsPage from "./components/Pages/CongratulationsPage/CongratulationsPage";
 
 import "./App.css";
 

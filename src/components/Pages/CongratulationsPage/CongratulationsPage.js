@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import Jumbo from "../../../hoc/Jumbo/Jumbo";
+import Jumbo from "../../Layout/Jumbo/Jumbo";
 import { Container, Button } from "reactstrap";
 import { findCourse } from "../../../helpers/helpers";
 
