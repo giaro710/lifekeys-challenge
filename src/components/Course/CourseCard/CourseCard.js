@@ -1,13 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  Button,
-  Card,
-  CardBody,
-  CardTitle,
-  CardText,
-  CardImg,
-} from "reactstrap";
+import { Card, CardBody, CardTitle, CardText, CardImg } from "reactstrap";
 import Btn from "../../Layout/Btn/Btn";
 
 const CourseCard = ({ id, title, subtitle }) => {
