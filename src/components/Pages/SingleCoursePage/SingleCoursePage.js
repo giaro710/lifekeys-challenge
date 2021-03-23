@@ -27,7 +27,7 @@ const SingleCoursePage = ({ courses }) => {
       <Btn onClick={handleNextButtonClick} text="NEXT" floatRight />
     ) : (
       <Link to={`/courses/${course.id}/quiz`}>
-        <Btn onClick={handleNextButtonClick} text="GO TO THE QUIZ" floatRight />
+        <Btn text="GO TO THE TEST" floatRight />
       </Link>
     );
 

@@ -44,12 +44,7 @@ const QuizPage = ({ courses }) => {
       />
     ) : (
       <Link to={`/courses/${course.id}/end`}>
-        <Btn
-          onClick={handleNextButtonClick}
-          text="CONCLUSION"
-          floatRight
-          disabled={!clickedSubmit}
-        />
+        <Btn text="CONCLUSION" floatRight disabled={!clickedSubmit} />
       </Link>
     );
 

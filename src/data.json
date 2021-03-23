@@ -210,11 +210,11 @@
             },
             {
               "answerText": "♭",
-              "isCorrect": false
+              "isCorrect": true
             },
             {
               "answerText": "€",
-              "isCorrect": true
+              "isCorrect": false
             }
           ]
         }
@@ -285,7 +285,7 @@
               "isCorrect": true
             },
             {
-              "answerText": "No smoking",
+              "answerText": "Smoking",
               "isCorrect": false
             },
             {
@@ -416,7 +416,7 @@
           ]
         },
         {
-          "questionText": "Mindfullness is was popularized by:",
+          "questionText": "Mindfullness was popularized by:",
           "type": "singleChoice",
           "answers": [
             {

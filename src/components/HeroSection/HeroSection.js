@@ -1,11 +1,12 @@
 import React from "react";
 import { Container } from "reactstrap";
+import "./HeroSection.css";
 
 const HeroSection = ({ title, subtitle }) => {
   return (
     <Container
       style={{ backgroundColor: "#e28336" }}
-      className="d-flex  align-items-center mb-5 py-5 pl-5"
+      className="d-flex align-items-center mb-5 py-5 pl-5"
     >
       <div style={{ marginLeft: "30px", width: "30%" }}>
         <h1 style={{ fontSize: "80px", fontWeight: "700", color: "#fff" }}>
@@ -13,8 +14,14 @@ const HeroSection = ({ title, subtitle }) => {
         </h1>
         <h6 style={{ color: "#fff" }}>{subtitle}</h6>
       </div>
+
       <div style={{ width: "70%" }}>
-        <img src="/images/hero.png" alt="hero-img" />
+        <img
+          className="hero-img"
+          width="100%"
+          src="/images/hero.png"
+          alt="hero-img"
+        />
       </div>
     </Container>
   );

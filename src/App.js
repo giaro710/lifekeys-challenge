@@ -7,6 +7,7 @@ import { courses } from "./data.json";
 import ScrollToTop from "./hoc/ScrollToTop/ScrollToTop";
 
 import Topbar from "./components/Layout/Topbar/Topbar";
+import Footer from "./components/Layout/Footer/Footer";
 import CoursesPage from "./components/Pages/CoursesPage/CoursesPage";
 import SingleCoursePage from "./components/Pages/SingleCoursePage/SingleCoursePage";
 import QuizPage from "./components/Pages/QuizPage/QuizPage";
@@ -48,6 +49,9 @@ const App = () => {
             </ScrollToTop>
           </Switch>
         </BrowserRouter>
+      </Container>
+      <Container>
+        <Footer />
       </Container>
     </div>
   );
